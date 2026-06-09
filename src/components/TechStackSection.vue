@@ -1,5 +1,5 @@
 <template>
-  <section id="tech" class="py-2xl px-margin-mobile md:px-margin-desktop bg-white max-w-7xl mx-auto">
+  <section id="tech" class="py-2xl px-margin-mobile md:px-margin-desktop bg-white dark:bg-[#0b1329] transition-colors duration-300 max-w-7xl mx-auto">
     <!-- Section Header -->
     <div class="flex flex-col md:flex-row justify-between items-end gap-md mb-xl">
       <div>
@@ -9,22 +9,22 @@
     </div>
 
     <!-- Tech Stack Table -->
-    <div class="overflow-x-auto rounded-2xl border border-outline-variant/30">
-      <table class="w-full text-left border-collapse bg-white">
-        <thead class="bg-surface-container-low border-b border-outline-variant/30">
+    <div class="overflow-x-auto rounded-2xl border border-outline-variant/30 dark:border-white/10">
+      <table class="w-full text-left border-collapse bg-white dark:bg-[#0f1a30]/30 transition-colors">
+        <thead class="bg-surface-container-low dark:bg-white/5 border-b border-outline-variant/30 dark:border-white/10">
           <tr>
-            <th class="p-lg font-headline-sm text-primary">Kategori</th>
-            <th class="p-lg font-headline-sm text-primary">Teknologi</th>
-            <th class="p-lg font-headline-sm text-primary">Versi</th>
-            <th class="p-lg font-headline-sm text-primary">Status</th>
+            <th class="p-lg font-headline-sm text-primary dark:text-white transition-colors">Kategori</th>
+            <th class="p-lg font-headline-sm text-primary dark:text-white transition-colors">Teknologi</th>
+            <th class="p-lg font-headline-sm text-primary dark:text-white transition-colors">Versi</th>
+            <th class="p-lg font-headline-sm text-primary dark:text-white transition-colors">Status</th>
           </tr>
         </thead>
-        <tbody class="divide-y divide-outline-variant/20">
-          <tr v-for="(tech, index) in technologies" :key="index" class="hover:bg-surface-container/20 transition-colors">
-            <td class="p-lg font-bold text-primary">{{ tech.category }}</td>
-            <td class="p-lg">{{ tech.name }}</td>
+        <tbody class="divide-y divide-outline-variant/20 dark:divide-white/5">
+          <tr v-for="(tech, index) in technologies" :key="index" class="hover:bg-surface-container/20 dark:hover:bg-white/5 transition-colors">
+            <td class="p-lg font-bold text-primary dark:text-white transition-colors">{{ tech.category }}</td>
+            <td class="p-lg text-on-surface-variant dark:text-primary-fixed-dim transition-colors">{{ tech.name }}</td>
             <td class="p-lg">
-              <code class="px-2 py-1 bg-surface-container rounded text-xs">{{ tech.version }}</code>
+              <code class="px-2 py-1 bg-surface-container dark:bg-white/10 text-primary dark:text-primary-fixed rounded text-xs transition-colors">{{ tech.version }}</code>
             </td>
             <td class="p-lg">
               <span :class="getStatusBadgeClass(tech.status)" class="status-badge">

@@ -1,5 +1,5 @@
 <template>
-  <footer class="w-full py-xl px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-md bg-primary text-on-primary border-t border-primary-container">
+  <footer class="w-full py-xl px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-md bg-primary dark:bg-[#060c18] text-on-primary border-t border-primary-container dark:border-white/10 transition-colors duration-300">
     <!-- Logo Section -->
     <div class="flex items-center gap-sm">
       <span class="material-symbols-outlined text-secondary-fixed-dim fill">science</span>
@@ -9,22 +9,18 @@
     <!-- Navigation Links -->
     <div class="flex gap-xl">
       <a
-        href="#setup"
-        class="text-primary-fixed-dim hover:text-secondary-fixed transition-colors font-body-sm text-body-sm hover:underline"
+        href="https://github.com/xnors32/Full-App-FE-BE"
+        target="_blank"
+        class="text-primary-fixed-dim hover:text-secondary-fixed transition-colors font-body-sm text-body-sm hover:underline uppercase"
       >
-        SETUP
+        Dokumentasi
       </a>
       <a
-        href="#api"
-        class="text-primary-fixed-dim hover:text-secondary-fixed transition-colors font-body-sm text-body-sm hover:underline"
+        href="https://frontend-baru.vercel.app/login"
+        target="_blank"
+        class="text-primary-fixed-dim hover:text-secondary-fixed transition-colors font-body-sm text-body-sm hover:underline uppercase"
       >
-        API
-      </a>
-      <a
-        href="#ui"
-        class="text-primary-fixed-dim hover:text-secondary-fixed transition-colors font-body-sm text-body-sm hover:underline"
-      >
-        UI
+        Web App
       </a>
     </div>
 

@@ -1,5 +1,5 @@
 <template>
-  <section class="py-2xl bg-surface-container-low px-margin-mobile md:px-margin-desktop">
+  <section class="py-2xl bg-surface-container-low dark:bg-[#0f1a30]/30 px-margin-mobile md:px-margin-desktop transition-colors duration-300">
     <div class="max-w-4xl mx-auto">
       <!-- Section Header -->
       <div class="text-center mb-xl">
@@ -57,9 +57,9 @@
 
       <!-- Additional Info -->
       <div class="mt-lg text-center">
-        <p class="text-on-surface-variant text-body-sm">
+        <p class="text-on-surface-variant dark:text-primary-fixed-dim text-body-sm transition-colors">
           Sistem akan berjalan di
-          <code class="px-2 py-1 bg-white rounded text-xs font-mono">http://localhost:5173</code>
+          <code class="px-2 py-1 bg-white dark:bg-white/10 dark:text-white rounded text-xs font-mono transition-colors">http://localhost:5173</code>
         </p>
       </div>
     </div>
